@@ -1,0 +1,178 @@
+html{
+  background-color: beige;
+  font-family: Verdana;
+}
+
+body{
+    background-color: beige;
+    font-size: 120%;
+    font-family: Verdana;
+  }
+
+header{
+  background-color: wheat;
+  color: black;
+  font-size: 1.8rem;
+  padding: .35rem;
+  text-align: center;
+  border: .35rem hidden red;
+  border-radius: 25px;
+  box-shadow: 8px 8px 10px black;
+  text-shadow: 5px 5px 7px grey;
+  width: 40rem;
+}
+
+footer{
+  box-sizing: border-box;
+  width: 100vw;
+  margin: auto;
+}
+
+.head{
+  background-color: wheat;
+  color: black;
+  font-size: 1.8rem;
+  padding: .35rem;
+  text-align: center;
+  border: .35rem hidden red;
+  border-radius: 25px;
+  box-shadow: 8px 8px 10px black;
+  text-shadow: 5px 5px 7px grey;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+footer{
+  background-color: wheat;
+  color: black;
+  font-size: 1.8rem;
+  padding: .35rem;
+  text-align: center;
+  border: .35rem hidden red;
+  border-radius: 25px;
+  box-shadow: 8px 8px 10px black;
+  text-shadow: 5px 5px 7px grey;
+  width: 40rem;
+  bottom: 0;
+}
+
+a{
+  font-weight: bold;
+}
+
+  .food{
+    background-color: wheat;
+    color:black;
+    font-size: 3rem;
+    width: 25rem;
+    padding: .3rem;
+    border: .25rem hidden lightblue;
+    border-width: 5px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 10px black;
+    text-shadow: 3px 3px 5px grey;
+    width: 100%;
+  }
+
+ article p{
+    color:royalblue;
+    font-size: 125%;
+    margin-right: 20px;
+    text-shadow: 2px 2px 3.5px grey;
+  }
+
+  ol{
+    color: violet;
+    font-size: .75rem;
+    list-style-type: decimal-leading-zero;
+  }
+
+  .dropdown{
+    position: fixed;
+    top: 10rem;
+    opacity: .7;
+    margin-left: 5rem;
+    border: .25rem hidden black;
+    background-color: palegoldenrod;
+    border-radius: 50px;
+    padding: 1rem;
+    opacity: .8%;
+  }
+
+  nav{
+    width: 20em;
+    padding-left: 25px;
+  }
+
+  nav > ul > li > a{
+    color: black;
+  }
+
+  nav > ul{
+    color: black;
+    list-style: disc;
+  }
+
+  img{
+    width: 300px;
+    height: 300px;
+    padding: .5rem;
+    background-color: black;
+    border: .4rem hidden black;
+    border-radius: .2rem;
+    box-shadow: 4px 4px 6px grey;
+  }
+
+  article{
+    margin-left:  50px;
+    min-width: 30rem;
+    max-width: 50rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  details > nav > ul > li:hover{
+    background-color: lightblue; 
+    background-size: 200px
+  }
+
+  details > nav > ul > li:active{
+    background-color: peru
+  }
+
+  table, th, td{
+    border: .1rem solid black;
+    border-collapse: collapse;
+  }
+
+  table{
+    box-shadow: 2px 2px 4px grey;
+  }
+
+  th{
+    background-color: beige;
+  }
+
+  td{
+    background-color: lightblue;
+  }
+
+  td:hover{
+    background-color: lightgreen
+  }
+
+  td:active{
+    background-color: lightsteelblue
+  }
+
+  .divisor{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+  }
+
+  .divisor footer{
+    flex: 0 1 100vw; 
+  }
