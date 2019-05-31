@@ -4,31 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Hello World</title>
-  <script>
-    function changeTitle(){
-      var title =
-      document.querySelector("#firstPage");
-        title.innerHTML += "<br> You changed the <u>title</u> with JavaScript!";
-    }
 
-    function changeTitleCSS(){
-      var title =
-      document.querySelector("#firstPage");
-        title.style.color = 'black';
-        title.style.border = "5px dashed red";
-        title.style.backgroundColor = "yellow";
-        title.style.textDecoration = "";
-    }
-  </script>
-  <link rel="stylesheet" href="Page1Style.css">
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+  <script src="JS/page1JS.js"></script>
+
+  <link rel="stylesheet" href="CSS/Page1Style.css">
 </head>
+
 <body>
   <div class="topPart">
-  <h1 id="firstPage"> Hello World Title </h1>
+  <h1 class="header" id="firstPage"> My first page ever </h1>
+  </div>
+  <div class="corpus">
   <button onclick="changeTitle();">Click here to change the title!</button>
   <button onclick="changeTitleCSS();">Click here to modify the CSS</button>
-  </div>
-  <div class="body">
   <p id="paragraph-1" class="regular-paragraphs"> Hello world, this is the <em>first</em> paragraph of this HTML. </p>
   <p id="paragraph-2" class="regular-paragraphs"> Now this is another paragraph in the same HTML. <br> Break test right here <br> To break the line you have to use &lt;br&gt; </p>
   <img src="https://goo.gl/pVxY0e" alt="Floating Flower" width=500>
@@ -230,7 +220,7 @@
 <audio src="https://archive.org/download/Music_Calgary_PD_1/The.good.the.bad.and.the.ashy.mp3" controls loop muted preload="none">
   Your browser does not support the audio file.
 </audio>
-<h2<>Down here I'll be adding videos</h2>
+<h2>Down here I'll be adding videos</h2>
 <p>This is one of the most beautiful presentations I've seen, the Tony's:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4SQfsBsMFls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h1>A test with various formats of video</h1>
@@ -244,12 +234,10 @@
 <h1>The optional iFrame</h1>
 <p>This is a parent page that will host the iframe.</p>
 <iframe src="https://www.w3.org/">
-  <p>Your browser does not support iframes.</p>
+  Your browser does not support iframe.
 </iframe>
-<p class="kitten">Women and cats will do as they please, and men and dogs should relax and get used to the idea. <br />- Robert A. Heinlein</p>
 </div>
-<div class="footer">
-  <h1>This is the footer of the page</h1>
-</div>
+<canvas id="canvas" resize></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.22/paper.js"></script>
 </body>
 </html>

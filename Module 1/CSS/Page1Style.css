@@ -67,7 +67,6 @@ html, body{
   h1{
     font-size: 2.0em;
     color: purple;
-    text-decoration: underline overline;
     margin: 15px;
     flex: 1 1 87px;
   }
@@ -75,26 +74,22 @@ html, body{
   #test1{/*This styles a h1 tag with an ID*/
     font-size: 2.0em;
     color: darkgreen;
-    text-decoration: underline overline;
     margin: 15px;
   }
 
   h2{
     font-size: 1.8em;
     color: purple;
-    text-decoration: underline overline;
   }
 
   h3{
     font-size: 1.6em;
     color: purple;
-    text-decoration: underline overline;
   }
   
   blockquote{
     font-size: 2.5em;
     color: darkblue;
-    text-decoration: underline;
   }
 
   table, th, td
@@ -139,13 +134,6 @@ iframe {
   width: 45rem;
   height: 30rem;
 }
-.kitten { 
-  padding: .4rem;
-  background-color: ivory;
-  border: .3rem none;
-  border-radius: 25px;
-  text-align: center;
-}
 div {
   float: left;
 }
@@ -154,4 +142,34 @@ div {
   padding: 25px;
   width: 250px;
   height: 250px;
+}
+
+.topPart {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.header {
+  font-weight: bold;
+  background-color: wheat;
+  color: black;
+  font-size: 1.8rem;
+  padding: .35rem;
+  text-align: center;
+  border: .35rem hidden red;
+  border-radius: 25px;
+  box-shadow: 8px 8px 10px black;
+  text-shadow: 5px 5px 7px grey;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+button{
+  margin-top: 3.5vw;
+}
+
+.corpus{
+  margin-bottom: 3.5vw;
 }
