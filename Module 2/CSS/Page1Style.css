@@ -1,0 +1,175 @@
+html, body{
+    font-family: Verdana;
+    font-size: 25px;
+    background-color: lightsteelblue;
+  }
+
+  p{
+    font-size: .7em;
+    color:firebrick;
+    margin-left:   10px; 
+    margin-right:  10px;   
+    margin-top:    10px;   
+    margin-bottom: 10px; 
+    flex: 1 1 87px;
+  }
+
+  #physics { color: red; }
+
+  .rainbow { color: green; }
+
+  .testingp1{/*This styles a class*/
+    font-size: .7em;
+    margin-left:   10px; 
+    margin-right:  10px;   
+    margin-top:    10px;   
+    margin-bottom: 10px;
+    color: darkslategrey;
+  }
+
+  .testingp2{
+    font-size: .7em;
+    margin-left:   10px; 
+    margin-right:  10px;   
+    margin-top:    10px;   
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  #testp1{/*This styles p with this ID*/
+    font-size: .7em;
+    color: fuchsia;
+    margin-left:   10px; 
+    margin-right:  10px;   
+    margin-top:    10px;   
+    margin-bottom: 10px; 
+  }
+
+  ul{
+    color:firebrick;
+    list-style-type: none;
+    margin: 10px;
+    list-style-position: inside;
+  }
+
+  ol{
+    color:firebrick;
+    list-style-type: upper-roman;
+    margin: 10px;
+    list-style-position: inside;
+  }
+
+  a{
+    font-size: 1.5em;
+    color: goldenrod;
+  }
+
+  h1{
+    font-size: 2.0em;
+    color: purple;
+    margin: 15px;
+    flex: 1 1 87px;
+  }
+
+  #test1{/*This styles a h1 tag with an ID*/
+    font-size: 2.0em;
+    color: darkgreen;
+    margin: 15px;
+  }
+
+  h2{
+    font-size: 1.8em;
+    color: purple;
+  }
+
+  h3{
+    font-size: 1.6em;
+    color: purple;
+  }
+  
+  blockquote{
+    font-size: 2.5em;
+    color: darkblue;
+  }
+
+  table, th, td
+{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 25px 50px;
+}
+
+td{
+    text-align: right;
+}
+
+th{
+    text-align: top;
+}
+
+th, td{
+    padding: 15px;
+}
+
+th.eg1
+{
+  width: 25%;
+}
+
+th.eg2
+{
+  height: 70px;
+}
+
+table.eg3
+{
+  width: 100%;
+}
+iframe {
+  display: flex;
+  border: 10px solid red;
+  padding: .5rem;
+  margin: 1rem;
+  box-shadow: 20px 20px 10px #888888;
+  width: 45rem;
+  height: 30rem;
+}
+div {
+  float: left;
+}
+
+#myFunction {
+  padding: 25px;
+  width: 250px;
+  height: 250px;
+}
+
+.topPart {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.header {
+  font-weight: bold;
+  background-color: wheat;
+  color: black;
+  font-size: 1.8rem;
+  padding: .35rem;
+  text-align: center;
+  border: .35rem hidden red;
+  border-radius: 25px;
+  box-shadow: 8px 8px 10px black;
+  text-shadow: 5px 5px 7px grey;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+button{
+  margin-top: 3.5vw;
+}
+
+.corpus{
+  margin-bottom: 3.5vw;
+}

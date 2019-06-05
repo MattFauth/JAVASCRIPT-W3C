@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hello World</title>
+
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+  <script src="JS/page1JS.js"></script>
+
+  <link rel="stylesheet" href="CSS/Page1Style.css">
+</head>
+
+<body>
+  <hr>
+  <hr>
+  <div class="topPart">
+  <h1 class="header" id="firstPage"> My first page ever </h1>
+  </div>
+  <div class="corpus">
+  <button onclick="changeTitle();">Click here to change the title!</button>
+  <button onclick="changeTitleCSS();">Click here to modify the CSS</button>
+  <button onclick="changeTitleCSSBack();">Click here to change the CSS back</button>
+  <p id="paragraph-1" class="regular-paragraphs"> Hello world, this is the <em>first</em> paragraph of this HTML. </p>
+  <p id="paragraph-2" class="regular-paragraphs"> Now this is another paragraph in the same HTML. <br> Break test right here <br> To break the line you have to use &lt;br&gt; </p>
+  <img src="https://goo.gl/pVxY0e" alt="Floating Flower" width=500>
+  <p id="paragraph-3" class="regular-paragraphs">To comment something in HTML you have to use the comment tag, which is
+    &lt;!-- something like this --&gt;
+  </p>
+  <h2>
+    I have hobbies
+  </h2>
+  <details>
+    <summary>Here we have lists types of my hobbies</summary>
+  <p>This is an unnordered list</p>
+  <ul>
+    <li>Crossfit</li>
+    <li>Learning</li>
+    <li>Gaming</li>
+  </ul>
+  <p>This is an ordered list</p>
+  <ol>
+    <li>Gaming</li>
+    <li>Learning</li>
+    <li>Crossfit</li>
+  </ol>
+  </details>
+  <p>
+    This is my Twitter <a href="https://twitter.com/MattCFauthS">@MattCFauthS</a>
+  </p>
+  <hr>
+  <p> 
+    Some characters in HTML writing:
+  </p>
+  <details>
+    <summary>Special characters</summary>
+    <ul>
+      <li>&lt; = &amp;lt; </li>
+      <li>&gt; = &amp;gt;</li>
+      <li>&amp; = &amp;amp;</li>
+      <li>&quot; = &amp;quot;</li>
+      <li>&nbsp; = Non-Breaking space(&amp;nbsp)</li>
+    </ul>
+  </details>
+  <p>
+    Page with all named character references in HTML: <a href="https://dev.w3.org/html5/html-author/charref">Click here</a>
+  </p>
+  <q>
+    Brevity is beautiful
+  </q>
+  <blockquote>Early to bed and early to rise, makes someone healthy, wealthy and wise - Benjamin Franklin</blockquote>
+  <P>This is my Paragraph</P>
+  <p>         This is my paragraph</p>
+  <p>This is my Paragraph</p>
+  <p>This     is    my    Paragraph </p>
+
+
+  <h2>Details and summary tags test</h2>
+  <p>
+    Details tag: Creates an arrow that shows the summary tag uppon user click and it does not requires JavaScript
+  </p>
+  <details>
+    <summary>Cast Members</summary>
+    <p>George Washington as Algernon Moncrieff</p>
+    <p>Ronald Reagan as John Worthing</p>
+    <p>Carrie Fisher as Leiah</p>
+    <p>The Rock as The Rock</p>
+    <p>Terry Crews as Terry</p>
+ </details>
+
+ <h2>Figure ang figcaption tags test</h2>
+ <p>
+   Figure tag: Announces an image
+   <br>figcaption: Shows the caption of an image
+ </p>
+ <figure>
+  <img src="img_cast.jpg" alt="The Importance of Being Earnest Cast" title="The Importance of Being Earnest cast members dancing" width=400>
+  <figcaption>Fig1. - The cast hard at work at dress rehearsal before opening night</figcaption>
+</figure>
+<h2>Mark tag Test</h2>
+<p>Mark tag: It displays the text in yellow background</p>
+<h3>Lane: </h3><p>Yes sir. [<mark>Handing his master the sandwiches on a salver</mark>]</p>
+
+<h1>TESTING 2.3.5</h1>
+<article id="main-content">
+  <header>
+    <h2>Tehnology Trends</h2>
+    <h3>The best of tech in 2017</h3>
+  </header>
+  <p>Some cool info about technology...</p>
+    <article id="sub-article">
+      <header>
+        <h3>Article on technology trends published by XXX magazine on August 2017</h3>
+      </header>
+      <p>XXX article content...</p>
+    </article>
+    <p>Some more cool info...</p>
+</article>
+
+<h2>&lt;div&gt; Element</h2>
+<p>
+  &lt;div&gt; is used when you can't use any other semantic elements (Can be styled with id and class)
+</p>
+
+<h2>
+  Testing images
+</h2>
+<p>This is the badge that represents HTML5:</p>
+<img src="badgehtml5.png" alt="HTML5 badge" title="HTML5 badge" height="173">
+<h2>
+  Testing Anchor Element &lt;a&gt;
+</h2>
+<p>
+<a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank">Click here</a> to go to the Wikipedia Hyperlink page.
+<br>Media Example:<a href="https://en.wikipedia.org/wiki/Media_queries?output=print" media="print and (resolution:250dpi)">Print wiki page about media queries</a>
+<br>Download Example: <a href="//prod-edxapp.edx-cdn.org/assets/courseware/v1/6e709b3765de6510e212932331a0bf52/asset-v1:W3Cx+HTML5.0x+1T2019+type@asset+block/hello.txt" download="user-copy.txt" target="_blank">Click to Download</a>
+<br>All CSS properties: <a href="https://www.w3.org/Style/CSS/all-properties.en.html" target="_blank">CLICK HERE</a>
+</p>
+
+<h1 id="test1"> Here I'll be testing CSS on ID's, not tags.</h1>
+<p id="testp1">To use CSS on an ID you have to type #nameOfTheTag and style it as you will.</p>
+
+<h1 class="testing1">Now We'll test it on classes!</h1>
+<p class="testingp1">This paragraph only has the class testingp1</p>
+<p class="testingp2">This one has only testingp2</p>
+<p class="testingp1 testingp2">This one has both classes!</p>
+
+<p id="physics" class="rainbow">Rainbows result from refraction of sunlight in falling water droplets plus reflection of the light from the back of the droplet.</p>
+<h1>We're now going to use tables!</h1>
+  <p>
+    So this is a table:
+  </p>
+  <table border=1>
+    <colgroup>
+      <col span="1" style="background-color:green">
+      <col span="1" style="background-color:orange">
+    </colgroup>
+    <thead style="color:white">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alexa</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>James</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>Trisha</td>
+        <td>23</td>
+      </tr>
+    </tbody>
+    <tfoot style="font-style: italic;">
+      <tr>
+        <td>3 Unique Names</td>
+        <td>2 Unique Ages</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <p> &lt; th &gt; is the tag we use to create a new cell</p>
+
+  <p>The width of the first whole column is decided by the width of the cell with most content:</p>
+<table>
+    <tr><th>Names</th><th>Profession</th></tr>
+    <tr><td>Michael Fernandez</td><td>Doctor</td></tr>  
+    <tr><td>Amy Frank</td><td >Computer Engineer</td></tr>  
+</table>
+
+<p>Specifying the width for one cell will affect the whole column. Width is set in percentage relative to the whole table:</p>
+<table>
+    <tr><th class="eg1">Names</th><th>Profession</th></tr>
+    <tr><td>Michael Fernandez</td><td>Doctor</td></tr>  
+    <tr><td>Amy Frank</td><td >Computer Engineer</td></tr>  
+</table>
+
+<p>Specifying the height for one cell will affect the whole row. Height is set in fixed pixels:</p>
+<table>
+    <tr><th class="eg2">Names</th><th>Profession</th></tr>
+    <tr><td>Michael Fernandez</td><td>Doctor</td></tr>  
+    <tr><td>Amy Frank</td><td >Computer Engineer</td></tr>  
+</table>
+
+<p>Specifying 100% for table width will occupy the whole width of the parent element:</p>
+<table class="eg3">
+    <tr><th>Names</th><th>Profession</th></tr>
+    <tr><td>Michael Fernandez</td><td>Doctor</td></tr>  
+    <tr><td>Amy Frank</td><td >Computer Engineer</td></tr>  
+</table>
+
+<h1>Now I'm going to add multimedia to this beutiful page</h1>
+<p>Here's Enter Sandman by Metallica:</p>
+<audio src="https://mb.wolfgangsvault.com/audio/320/30478.mp3" controls>This song is not supported by the browser</audio>
+<p>And now Psycho Killer by The Talking Heads:</p>
+<audio src="https://mb.wolfgangsvault.com/audio/dls/S61754.mp3" controls preload="auto" autoplay>This song is not supported by the browser</audio>
+<p>And the example from the course:</p>
+<audio src="https://archive.org/download/Music_Calgary_PD_1/The.good.the.bad.and.the.ashy.mp3" controls loop muted preload="none">
+  Your browser does not support the audio file.
+</audio>
+<h2>Down here I'll be adding videos</h2>
+<p>This is one of the most beautiful presentations I've seen, the Tony's:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4SQfsBsMFls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h1>A test with various formats of video</h1>
+<video controls height="320" width="240">
+  <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+  <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm">
+  <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg">
+  Your browser does not support the HTML5 video element.
+</video>
+<p>This is used when a browser can't open a certain file format</p>
+<h1>The optional iFrame</h1>
+<p>This is a parent page that will host the iframe.</p>
+<iframe src="https://www.w3.org/">
+  Your browser does not support iframe.
+</iframe>
+</div>
+<canvas id="canvas" resize></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.22/paper.js"></script>
+</body>
+</html>
