@@ -12,6 +12,14 @@ function changeTitleCSS(){
   title.style.backgroundColor = "yellow";
 }
 
+function changeTitleCSSBack(){
+  var title =
+  document.querySelector("#firstPage");
+  title.style.color = 'black';
+  title.style.border = ".35rem hidden red";
+  title.style.backgroundColor = "wheat";
+}
+
 paperScript = function() {
   var mousePoint = view.center;
   var amount = 25;

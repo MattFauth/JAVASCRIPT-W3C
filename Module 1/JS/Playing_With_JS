@@ -1,0 +1,11 @@
+var variavel;
+let x;
+
+variavel = 75;
+//Commenting in JavaScript goes like this//
+let thisNumber = 10;
+let x = 1, y = 3, z = 12; //OR//
+var numb1 = 1, numb2 = 2, numb3 = 3; //Camel case for variable names//
+
+//This is a constant://
+const TIME_LIMIT = 50;
