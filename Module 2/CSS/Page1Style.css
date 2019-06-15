@@ -52,6 +52,13 @@ html, body{
     list-style-position: inside;
   }
 
+  .javinha{
+    color:firebrick;
+    list-style-type: circle;
+    margin: 10px;
+    list-style-position: inside;
+  }
+
   ol{
     color:firebrick;
     list-style-type: upper-roman;
