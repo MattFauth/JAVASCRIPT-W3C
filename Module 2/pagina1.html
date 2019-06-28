@@ -261,9 +261,25 @@
       <li>Stric not equal &excl;&equals;&equals;</li>
     </ul>
   </details>
+  <h4>Notes on JavaScript</h4>
+    <p>JavaScript has IF statements, ELSE IF statements and ELSE statements</p>
+    <p>BREAK is used in JS is a bit like Return on Python, but it makes the choice 100% exclusive</p>
+    <p>The do-while statement executes the content of the loop once before checking the condition of the while, whereas a while statement will check the condition first before executing the content.</p>
+    <h5>While code example</h5>
+    <code>
+      var test1 = 10, test2 = 5, test3 = 0, i = 0;<br>
 
-  
-  <hr>
+      while (i &lt; test1){<br>
+        if (test3 &lt; test1+test2){<br>
+        test3 = test1 + test2;<br>
+          }<br>
+        else{<br>
+        test3 = test3 + test3;<br>
+        }<br>
+        console.log(test3)<br>
+        i += 1;	<br>
+      }</code>
+    <hr>
 </div>
 </body>
 </html>
