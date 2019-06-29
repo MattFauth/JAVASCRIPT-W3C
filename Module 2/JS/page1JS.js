@@ -10,6 +10,7 @@ function changeTitleCSS(){
   title.style.color = 'black';
   title.style.border = "5px dashed red";
   title.style.backgroundColor = "yellow";
+  return title;
 }
 
 function changeTitleCSSBack(){
@@ -18,6 +19,7 @@ function changeTitleCSSBack(){
   title.style.color = 'black';
   title.style.border = ".35rem hidden red";
   title.style.backgroundColor = "wheat";
+  return title;
 }
 
 paperScript = function() {
@@ -57,3 +59,17 @@ paperScript = function() {
   var src = paperScript.toString();
   a.appendChild(document.createTextNode(src.substring(src.indexOf('\n') + 1, src.lastIndexOf('\n'))));
   document.body.appendChild(a);
+
+  function message1(){
+    var ab = document.querySelector("#change");
+    ab.addEventListener('click', function(evt) {
+      changeTitleCSS();
+      alert("CSS changed");
+    });
+  }
+  function message2(){
+    var ac = document.querySelector('#changeBack');
+    ac.addEventListener('click', function(evt){
+      alert("CSS changed back");
+    });
+  }
