@@ -19,9 +19,34 @@
   <h1 class="header" id="firstPage"> My first page ever </h1>
   </div>
   <div class="corpus">
-  <button onclick="changeTitle();">Click here to change the title!</button>
-  <button onclick="message();" id="change">Click here to modify the CSS</button>
-  <button onclick="message2();" id="changeBack">Click here to change the CSS back</button>
+  <button onclick="changeTitle();" id="changeTitle">Click here to change the title!</button>
+  <script>
+    var ba = document.querySelector("#changeTitle");
+    ba.addEventListener('click', function(evt){
+      alert("Title changed")
+    });
+  </script>
+  <button onclick="changeTitleBack();" id="changeTBack">Click here to change the title back!</button>
+  <script>
+    var bb = document.querySelector("#changeTBack");
+    bb.addEventListener('click', function(evt){
+      alert("Title changed back")
+    });
+  </script>
+  <button onclick="changeTitleCSS();" id="change">Click here to modify the CSS</button>
+  <script>
+    var ab = document.querySelector("#change");
+    ab.addEventListener('click', function(evt) {
+      alert("CSS changed");
+    });
+  </script>
+  <button onclick="changeTitleCSSBack();" id="changeBack">Click here to change the CSS back</button>
+  <script>
+    var ac = document.querySelector('#changeBack');
+    ac.addEventListener('click', function(evt){
+      alert("CSS changed back");
+    });
+  </script>
   <p id="paragraph-1" class="regular-paragraphs"> Hello world, this is the <em>first</em> paragraph of this HTML. </p>
   <p id="paragraph-2" class="regular-paragraphs"> Now this is another paragraph in the same HTML. <br> Break test right here <br> To break the line you have to use &lt;br&gt; </p>
   <img src="https://goo.gl/pVxY0e" alt="Floating Flower" width=500>
@@ -279,6 +304,25 @@
         console.log(test3)<br>
         i += 1;	<br>
       }</code>
+
+    <p>Pick a color and see what happens!</p>
+    <label>
+      <input type="color" onchange="changePageBackgroundColor(this.value);">
+    </label>
+    <p>
+      <span id="chosenColor"></span>
+    </p>
+    <h2>
+      Write a name!
+    </h2>
+    <label>
+      <span>Name (Required):</span>
+      <input type="text" name="nom"
+       maxlength="32" required oninput="validateName(this)">
+    </label>
+    <p>
+      <span id="nameTyped"></span>
+    </p>
     <hr>
 </div>
 </body>
