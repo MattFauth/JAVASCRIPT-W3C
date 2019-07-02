@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>querySelector and querySelector example 1</title>
+  <script src="JS/queryJS.js"></script>
+</head>
+<body>
+  <button onclick="addBorderToFirstImage();">
+    Add a border to the first image
+  </button>
+  <br>
+  <button onclick="resizeAllImages();">
+    Resize all images
+  </button>
+  <br>
+  <p>Click one of the buttons above!</p>
+<img src="https://mainline.i3s.unice.fr/mooc/Ntvj5rq.png" 
+     id="img1"
+     width=200 alt="image #1">
+<img src="https://mainline.i3s.unice.fr/mooc/yiU59oi.gif" 
+     width=200 alt="image #2">
+<img src="https://mainline.i3s.unice.fr/mooc/6FstYbc.jpg" 
+     width=200 alt="image #3">
+<img src="https://mainline.i3s.unice.fr/mooc/L97CyS4.png" 
+     width=200 alt="image #4">
+
+<hr>
+
+<button onclick="firstLiClassRedInUl();">Select first li of class red and color it in red</button>
+  <br>
+  <button onclick="allLisInUlOfClassNav();">Underline All li in a ul of class nav</button>
+  
+<ul class="nav">
+    <li>Home</li>
+    <li class="red">Products</li>
+    <li>About</li>
+</ul>
+  Another list:
+  <ul>
+    <li>Apple</li>
+    <li class="red">Cherries</li>
+    <li>Oranges</li>
+  </ul>
+    <hr>
+
+    <button onclick="displayListOfCheckedItems();">Show Checked items</button>
+    <br>
+  <ul id="fruits">
+      <li>
+         <input type="checkbox" name="fruit" value="apples">Apples
+      </li>
+      <li>
+         <input type="checkbox" name="fruit" value="oranges">
+          Oranges
+      </li>
+      <li>
+         <input type="checkbox" name="fruit" value="bananas">   
+          Bananas
+      </li>
+      <li>
+         <input type="checkbox" name="fruit" value="grapes">
+          Grapes
+      </li>
+  </ul>
+  <p>
+    <span id="output"></span>
+  </p>
+</body>
+</html>
