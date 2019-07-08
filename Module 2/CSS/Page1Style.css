@@ -183,3 +183,12 @@ button{
 .corpus{
   margin-bottom: 3.5vw;
 }
+
+#myCanvas {
+  border: 1px solid black;
+  float:left;
+}
+
+#controls {
+  float:left;
+}
