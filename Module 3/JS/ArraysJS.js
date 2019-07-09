@@ -3,10 +3,9 @@ var people = [
     {name:'Henri', age:20},
     {name:'Francois', age:29}
   ];
-  function callThis(){
-  for (var i = 0; i < people.length; i++){
-      var p = people[i];
-      document.body.innerHTML += p.name + "<br>";
-  }
-}
+  persons.forEach(function(p, index, theArray) {
+    document.body.innerHTML += p.name + ", age " + p.age +
+                            ", at index " + index + " in the array of " +
+                           theArray.length + " elements<br>";
+});
   
