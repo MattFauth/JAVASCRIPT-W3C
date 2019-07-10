@@ -322,3 +322,54 @@ function changeTitleCSSBack(){
       ctx.fill();
       ctx.restore();
   }
+
+  function computeBirthdays() {
+    var dayOfTheWeek = [0,0,0,0,0,0,0];
+  
+    
+    var birthday = document.querySelector("#birthday").value;
+    var birthdayAsDate = new Date(birthday);
+    var birthdayMonth = birthdayAsDate.getMonth();
+    var birthdayDate  = birthdayAsDate.getDate();
+  
+    var startYear = document.querySelector("#start").value;
+    var endYear = document.querySelector("#end").value;
+    
+    for (var year = startYear; year <= endYear; year++) {
+        var dayOfTheWeekMyBirthDayOccurs = 
+            new Date(year, birthdayMonth, birthdayDate).getDay();
+    
+          console.log('Year : ' + year + " Day of your birthday: " + 
+                      getDayName(dayOfTheWeekMyBirthDayOccurs));
+
+        dayOfTheWeek[dayOfTheWeekMyBirthDayOccurs]++;
+     }
+
+     displayResults(dayOfTheWeek);
+  
+  }
+  
+  function getDayName(dayIndex) {
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    return days[dayIndex];
+  }
+  
+  function displayResults(array) {
+    document.querySelector("#results").innerHTML = "<p>Occurences of your Birthday:</p>";
+    
+    var table = document.createElement("table");
+    var firstRow = table.insertRow();
+    var secondRow = table.insertRow();
+    
+    
+    array.forEach(function(dayOccurence, index) {
+      var dayNameCell = firstRow.insertCell(index);
+      dayNameCell.innerHTML = getDayName(index);
+      
+      var nbCell = secondRow.insertCell(index);
+      nbCell.innerHTML = dayOccurence;
+      
+    });
+    
+    document.querySelector("#results").appendChild(table);
+  }

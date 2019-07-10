@@ -325,8 +325,8 @@
       Write a name!
     </h2>
     <label>
-      <span>Name (Required):</span>
-      <input type="text" name="nom"
+      <label for="wName">Name (Required):</label>
+      <input type="text" name="nom" id="wName"
        maxlength="32" required oninput="validateName(this)">
     </label>
     <p>
@@ -336,9 +336,9 @@
     Math maker!
     </h2>
     <label>
-      <span>First number(required):</span>
+      <label for="numb1">First number(required): </label>
       <input id="numb1" type="number" name="numb1" maxlength="10" required>
-      <span>Second number(required):</span>
+      <label for="numb2">Second number(required):</label>
       <input id="numb2" type="number" name="numb2" maxlength="10" required>
       <button onclick="calc()" id="sum">Sum</button> <button onclick="calc()" id="multi">Multiply</button>
       <button onclick="calc()" id="div">Divide</button> <button onclick="calc()" id="sub">Subtract</button>
@@ -356,7 +356,7 @@
       <p>You entered:</p>
       <ul id="items"></ul>
   <hr>
-  <h1>Creating a game project</h1>
+  <!--<h1>Creating a game project</h1>
   <div id="controls">
     <label for="nbBalls">Number of balls: </label>
     <input type="number" min=1 max=30 
@@ -382,11 +382,43 @@
              min=0.1 max=3 step=0.1
            oninput="changeBallSpeed(this.value);"
              id="ballSpeed">
-    <p></p>
-    
-  </div>
-  <canvas id="myCanvas"  width="400" height="400"></canvas>
+    <canvas id="myCanvas"  width="400" height="400"></canvas>
+    <p></p> 
+  </div> -->
+  <h1>FIND OUT THE OCCURENCES OF YOUR BIRTHDAY!</h1>
+  <label for="birthday">Your birthday: </label><input id="birthday" type="date" value="">
+  <p>Please enter a starting and an ending year, then click the button.</p>
+  <label for="start">Start year:</label>
+  <input type=number id="start" value=2019 min=1965 max=3000>
   <p></p>
+  <label for="end">End year:</label>
+  <input type=number id="end" value=2047 min=1965 max=3000>
+  <p></p>
+  <button onclick="computeBirthdays();">
+    Compute how many times 
+    your birthday will occur, 
+    for each day of the week
+  </button>
+  <p></p>
+  <output id="results"></output>
+  <hr>
+  <h1>Grouping controls</h1>
+  <p>These Radiobuttons are grouped together, you can only choose one</p>
+  <fieldset>
+    <legend>Output Format</legend>
+      <div>
+        <input type="radio" name="format" id="txt">
+        <label for="txt">Text file</label>
+      </div>
+      <div>
+        <input type="radio" name="format" id="csv">
+        <label for="csv">CSS file</label>
+      </div>
+      <div>
+        <input type="radio" name="format" id="HTML">
+        <label for="HTML">HTML file</label>
+      </div>
+  </fieldset>
 </div>
 </body>
 </html>
